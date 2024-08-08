@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "esnext", //
+    "composite": true,
+    "jsx": "preserve", // jsx 保留
+    "lib": ["ES2018", "DOM", "DOM.Iterable"], // 使用dom
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "declaration": true, // 关闭声明文件
+    "baseUrl": ".",
+    "sourceMap": true,
+    "moduleResolution": "Bundler",
+    "allowJs": false,
+    "strict": true,
+    "strictNullChecks": true, //
+    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // 支持es6的模块方式
+    "removeComments": false,
+    "rootDir": ".",
+    "types": []
+  },
+  "include": ["packages", "typings/vue-shim.d.ts"],
+  "exclude": [
+    "node_modules",
+    "**/dist",
+    "**/__tests__/**/*",
+    "**/gulpfile.ts",
+    "**/test-helper",
+    "packages/test-utils",
+    "**/*.md"
+  ]
+}

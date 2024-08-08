@@ -1,0 +1,4 @@
+# 创建工作空间
+packages:
+  - "packages/*"
+  - "components/**"

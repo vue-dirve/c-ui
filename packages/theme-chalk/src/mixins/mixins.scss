@@ -1,0 +1,42 @@
+@use "config" as *; // 导入全部的conig语法 而且只会引用一次 私有变量不会被引用
+@forward "config"; // 导出 config全局变量
+
+// 生成的对应的对应的bem规范
+
+// @include b(button) {
+//   color: red;
+// }
+// c-button
+@mixin b($block) {
+  $B: $namespace + "-" + $block;
+  .#{$B} {
+    @content;
+  }
+}
+
+// c-button.is-disabled 状态 at-root表示当前元素
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+
+// &--primary => c-button--primary
+@mixin m($modifier) {
+  @at-root {
+    #{& + $modifier-seprator + $modifier} {
+      @content;
+    }
+  }
+}
+
+// &__header => c-button__header
+@mixin e($element) {
+  @at-root {
+    #{& + $element-separator + $element} {
+      @content;
+    }
+  }
+}

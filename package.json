@@ -1,0 +1,38 @@
+{
+  "name": "cooper-component",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "pnpm -F play dev",
+    "docs": "pnpm -F docs dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cooper/components": "workspace:*",
+    "@cooper/theme-chalk": "workspace:*",
+    "@cooper/utils": "workspace:*",
+    "@types/mockjs": "^1.0.10",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "mockjs": "^1.1.0",
+    "sass": "^1.77.6",
+    "scss": "^0.2.4",
+    "scss-loader": "^0.0.1",
+    "typescript": "^5.4.5",
+    "vue": "^3.4.25",
+    "vue-eslint-parser": "^9.4.3"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  }
+}
